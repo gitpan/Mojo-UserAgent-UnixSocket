@@ -32,6 +32,7 @@
       },
       "runtime" : {
          "requires" : {
+            "IO::Socket::UNIX" : "1.23",
             "Mojolicious" : "5.00"
          }
       }
@@ -49,5 +50,5 @@
          "url" : "https://github.com/kanatohodets/mojo-useragent-unixsocket"
       }
    },
-   "version" : "0.01"
+   "version" : "0.02"
 }

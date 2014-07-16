@@ -18,10 +18,11 @@ no_index:
     - t
     - inc
 requires:
+  IO::Socket::UNIX: '1.23'
   Mojolicious: '5.00'
 resources:
   bugtracker: https://github.com/kanatohodets/mojo-useragent-unixsocket/issues
   homepage: https://github.com/kanatohodets/mojo-useragent-unixsocket
   license: http://dev.perl.org/licenses/
   repository: https://github.com/kanatohodets/mojo-useragent-unixsocket
-version: '0.01'
+version: '0.02'

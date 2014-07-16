@@ -3,7 +3,7 @@ use Carp 'carp';
 use Mojo::Base 'Mojo::UserAgent';
 use DummySocket;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub start {
     my ($self, $tx, $cb) = @_;
@@ -12,7 +12,7 @@ sub start {
 
         # pull out the sock_path ('host') and url path.
         my $sock_path = ($path =~ m#(^.+\.sock)\/#)[0];
-        my $url_path = $path =~ s/$sock_path//r;
+        (my $url_path = $path) =~ s/$sock_path//;
         $tx->req->url->path($url_path);
         $tx->req->url->host('localhost');
 
