@@ -25,4 +25,4 @@ resources:
   homepage: https://github.com/kanatohodets/mojo-useragent-unixsocket
   license: http://dev.perl.org/licenses/
   repository: https://github.com/kanatohodets/mojo-useragent-unixsocket
-version: '0.02'
+version: '0.021'
